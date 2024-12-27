@@ -10,3 +10,5 @@ Four lines connect these points:
 - **Line(4)** (input boundary).
 
 These lines form a closed loop, which defines a **Plane Surface** for the geometry. Physical groups are assigned to the boundaries: **"Input"** for the left boundary, **"Walls"** for the top and bottom walls, and **"Output"** for the right boundary. The entire surface is grouped under the physical name **"Tube"**. The Delaunay algorithm is specified for meshing.
+
+`GMSH` is a 3D finite element mesh generator used for preprocessing and geometry definition. The command **`gmsh tube2D.geo -2 -o tube2D.msh`** generates a 2D mesh from the geometry file **`tube2D.geo`** and saves it in the default **`.msh`** format. The command **`gmsh tube2D.geo -2 -format nas -o tube2D.bdf`** generates the same 2D mesh but outputs it in the **Nastran Bulk Data Format (BDF)**, commonly used for structural analysis. The command **`gmsh tube2D.geo -2 -format unv -o tube2D.unv`** creates the 2D mesh and exports it in the **Universal (UNV)** file format, suitable for various simulation tools.
