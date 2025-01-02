@@ -31,6 +31,7 @@ Then:
 define boundary-conditions velocity-inlet 5 no no yes yes no 0.05 no 270
 define boundary-conditions pressure-outlet 4 no 0 no 300 no yes no
 define boundary-conditions wall 2 0 no 0 no yes temperature no 330 no no
+```
 
 Then:
 ```
